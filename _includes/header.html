@@ -1,58 +1,81 @@
-<!-- Navigation -->
-    <nav class="navbar navbar-default navbar-fixed-top">
+{% if page.url != "/" and page.featured_image and site.data.settings.header_settings.allow_transparent == "yes" %}
+<nav id="navbar-main" class="navbar navbar-main navbar-expand-lg navbar-transparent headroom">
+  {% elsif site.data.settings.header_settings.theme == "blue" %}
+  <nav id="navbar-main" class="navbar navbar-main navbar-expand-lg bg-primary navbar-dark headroom">
+    {% elsif site.data.settings.header_settings.theme == "dark" %}
+    <nav id="navbar-main" class="navbar navbar-main navbar-expand-lg bg-default navbar-dark headroom">
+      {% else %}
+      <nav id="navbar-main" class="navbar navbar-main navbar-expand-lg bg-white headroom">
+        {% endif %}
+
         <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand page-scroll" href="#page-top">{{site.title}}</a>
-            </div>
+          {% if site.data.settings.header_settings.logo_image %}
+          <a href="{{ site.baseurl }}/" class="navbar-brand mr-lg-5">
+            <img src="{{ site.data.settings.header_settings.logo_image | relative_url }}">
+          </a>
+          {% else %}
+          <a href="{{ site.baseurl }}/" class="navbar-brand mr-lg-5">
+            {{site.data.settings.basic_settings.site_title}}
+          </a>
+          {% endif %}
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="hidden">
-                        <a href="#page-top"></a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#services">Services</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#portfolio">Portfolio</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#about">A propos</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#team">Team</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#contact">Contact</a>
-                    </li>
-                </ul>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar_global"
+            aria-controls="navbar_global" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="navbar-collapse collapse" id="navbar_global">
+            <div class="navbar-collapse-header">
+              <div class="row">
+                <div class="col-6 collapse-brand">
+                  {% if site.data.settings.header_settings.mobile_logo_image %}
+                  <a href="{{ site.baseurl }}/">
+                    <img src="{{ site.data.settings.header_settings.mobile_logo_image | relative_url }}">
+                  </a>
+                  {% elsif site.data.settings.header_settings.logo_image %}
+                  <a href="{{ site.baseurl }}/">
+                    <img src="{{ site.data.settings.header_settings.logo_image | relative_url }}">
+                  </a>
+                  {% else %}
+                  <a class="navbar-brand" href="{{ site.baseurl }}/">
+                    {{ site.data.settings.basic_settings.site_title }}
+                  </a>
+                  {% endif %}
+                </div>
+                <div class="col-6 collapse-close">
+                  <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar_global"
+                    aria-controls="navbar_global" aria-expanded="false" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                  </button>
+                </div>
+              </div>
             </div>
-            <!-- /.navbar-collapse -->
+            <ul class="navbar-nav navbar-nav-hover align-items-lg-center ml-lg-auto">
+              {% for item in site.data.settings.menu_settings.menu_items %}
+                {% if item.submenu_items %}
+                  <li class="nav-item dropdown">
+                    <a href="javascript:;" class="nav-link" data-toggle="dropdown" role="button">
+                      <span class="nav-link-inner--text">{{ item.title }}</span>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      {% for subitem in item.submenu_items %}
+                      <a class="dropdown-item" href="{{ subitem.url | relative_url}}">
+                        <i class="ni {{ subitem.icon }}"></i>
+                        {{subitem.title}}
+                      </a>
+                      {% endfor %}
+                    </div>
+                  </li>
+                {% else %}
+                  <li class="nav-item">
+                    <a href="{{ item.url | relative_url }}" class="nav-link">
+                      <span class="nav-link-inner--text">{{ item.title }}</span>
+                    </a>
+                  </li>
+                {% endif %}
+              {% endfor %}
+
+            </ul>
+          </div>
         </div>
-        <!-- /.container-fluid -->
-    </nav>
-
-    <!-- Header -->
-    <header>
-        <div class="container">
-            <div class="intro-text">
-                <div class="intro-lead-in">Bienvenue!</div>
-                <div class="intro-heading"><h1>Chasseur Immobilier à Avignon</h1></div>
-                <a href="#services" class="page-scroll btn btn-xl">Découvrir mes services</a>
-            </div>
-        </div>
-    </header>
-<!--
-        {% for page in site.pages %}
-          {% if page.title %}<a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>{% endif %}
-        {% endfor %}
- -->
-
+      </nav>

@@ -1,65 +1,45 @@
-url: https://www.chasseurimmobilieravignon.com
-baseurl: /
+site: Argon Jekyll Theme
 
-# Site settings
-title: Frédérique Lodola
-email: your-email@domain.com
-description: "Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description."
+url: https://argon.jekyllthemes.io
+baseurl: 
 
+collections:
+  pages:
+    output: true
+    permalink: /:name
+  posts:
+    output: true
+    permalink: /blog/:slug
+    type: "post"
 
-# Team names, titles and social links
-people:
-- name: Kay Garland
-  pic: 1
-  position: Lead Designer
-  social:
-    - title: twitter
-      url: #
-    - title: facebook
-      url: #
-    - title: stack-overflow
-      url: #
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "default"
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post" 
 
-- name: Larry Parker
-  pic: 2
-  position: Lead Marketer
-  social:
-    - title: twitter
-      url: #
-    - title: facebook
-      url: #
-    - title: linkedin
-      url: #
+sass:
+  sass_dir: assets/styles
+  style: compressed
+  sourcemap: never
 
-- name: Diana Petersen
-  pic: 3
-  position: Lead Developer
-  social:
-    - title: twitter
-      url: #
-    - title: facebook
-      url: #
-    - title: google-plus
-      url: #
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
 
-# Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
-social:
-  - title: twitter
-    url: http://twitter.com/jekyllrb
-  - title: facebook
-    url:
-  - title: stack-overflow
-    url: http://stackoverflow.com/questions/tagged/jekyll
-  - title: bitbucket 
-    url: http://bitbucket.org/jekyll
-  - title: github
-    url: http://github.com/jekyll
-
-# Postal address (add as many lines as necessary)
-address:
-  - line: 3481 Melrose Place
-  - line: Beverly Hills, CA 90210
-
-# Build settings
-markdown: kramdown
-permalink: pretty
+paginate: 6
+paginate_path: "/blog/page:num/"
+  
