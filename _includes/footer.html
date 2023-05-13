@@ -2,7 +2,8 @@
   <div class="container">
     <div class="row row-grid align-items-center mb-2 mt-2">
       <div class="col-lg-6">
-        <h4 class="mb-0 font-weight-light">{{ site.data.settings.footer_settings.footer_tagline }}</h4>
+        <h4 class="mb-0 font-weight-light">{{ site.data.settings.footer_settings.footer_tagline_primary }}</h4>
+        <h5 class="mb-0 font-weight-light">{{ site.data.settings.footer_settings.footer_tagline_secondary }}</h5>
       </div>
       <div class="col-lg-6 text-lg-right">
         {% include socials.html %}
@@ -12,7 +13,7 @@
     <div class="row align-items-center justify-content-md-between">
       <div class="col-md-6">
         <div class="copyright">
-          <span> © {{ 'now' | date: "%Y" }} Argon Design System by <a href="https://www.creative-tim.com/" target="_blank">Creative Tim</a> & <a href="https://jekyllthemes.io" target="_blank">Jekyll Themes</a></span>
+          <span> © {{ 'now' | date: "%Y" }} Frédérique Lodola</span>
         </div>
       </div>
       <div class="col-md-6">
@@ -108,3 +109,7 @@
 {% endif %}
 
 <script src="{{ "/assets/js/argon-design-system.min.js?v=1.0.0" | relative_url }}" type="text/javascript"></script>
+
+<!-- Start of HubSpot Embed Code -->
+<script type="text/javascript" id="hs-script-loader" async defer src="//js-eu1.hs-scripts.com/139596885.js"></script>
+<!-- End of HubSpot Embed Code -->

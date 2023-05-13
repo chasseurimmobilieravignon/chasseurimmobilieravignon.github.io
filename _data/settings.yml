@@ -1,12 +1,12 @@
 basic_settings:
-  site_title: Argon Jekyll Theme
+  site_title: Frédérique Lodola - Chasseur Immmobilier à Avignon
   favicon_image: /assets/img/favicon.png
 
 header_settings:
-  logo_image: /assets/img/brand/white.png
-  mobile_logo_image: /assets/img/brand/blue.png
+  logo_image: /assets/img/brand/frederique-lodola-chasseur-immobilier.png
+  mobile_logo_image: /assets/img/brand/frederique-lodola-chasseur-immobilier.png
   # Choose a color for your header [blue, dark, light].
-  theme: dark
+  theme: light
   # If the page has a featured image, it turns transparent if allow_transparent is set to "yes".
   allow_transparent: "yes"
 
@@ -63,27 +63,29 @@ menu_settings:
       url: '/contact'
 
 footer_settings:
-  footer_tagline: Argon & Jekyll, together at last.
+  footer_tagline_primary: Frédérique Lodola
+  footer_tagline_secondary: Chasseur immobilier à Avignon
 
 contact_settings:
-  form_action: 'https://formspree.io/hello@jekyllthemes.io'
+  #form_action: 'https://formspree.io/hello@jekyllthemes.io'
+  #form_action: ''
   confirmation_url: '/thanks'
   email_subject: 'Contact form submission'
   send_button_text: 'Send Message'
 
 social_settings:
-  facebook_url: 'https://www.facebook.com/jekyllthemes/'
-  twitter_url: 'https://twitter.com/jekyllthemesio'
-  instagram_url: 'https://twitter.com/jekyllthemesio'
+  facebook_url: 'https://www.facebook.com/profile.php?id=100022720216616'
+  twitter_url: ''
+  instagram_url: 'https://www.instagram.com/fred_lodola/'
   youtube_url: ''
   vimeo_url: ''
   pinterest_url: ''
   tumblr_url: ''
   dribbble_url: ''
   behance_url: ''
-  github_url: 'https://twitter.com/jekyllthemesio'
+  github_url: ''
   reddit_url: ''
-  linkedin_url: ''
+  linkedin_url: 'https://www.linkedin.com/in/fr%C3%A9d%C3%A9rique-lodola/'
 
 authors:
   tom:
