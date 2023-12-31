@@ -1,0 +1,23 @@
+<section class="blogs-1">
+    <div class="container">
+        {% assign testimonial_count = site.testimonials | size %}
+        <div class="row align-items-center">
+            {% for testimonial in site.testimonials reversed %}
+            <div class="{% if forloop.index == 1 or forloop.index == 6 %}col-lg-6{% else %}col-lg-3{% endif %}">
+                <div class="card card-blog card-background" data-animation="zooming">
+                    <div class="full-background" style="background-image: url({{ testimonial.featured_image | relative_url }})"></div>
+                    <a href="{{ testimonial.url | relative_url }}">
+                        <div class="card-body">
+                            <div class="content-bottom">
+                                <h6 class="card-category text-white opacity-8">{{ testimonial.date | date_to_long_string }}
+                                </h6>
+                                <h5 class="card-title">{{ testimonial.title }}</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>

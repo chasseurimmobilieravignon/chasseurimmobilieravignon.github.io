@@ -1,10 +1,16 @@
 ---
-title: Contact
-subtitle: This theme comes with a built-in contact form that's free and easy to set up.
-type: contact
-description: This theme comes with a built-in contact form that's free and easy to set up.
+title: Vous avez une question concernant votre projet immobilier à Avignon ?
+subtitle: Je serai ravie de vous aider !
+#type: contact
+description: Chasseur Immobilier, implanatée à Avignon depuis 2017; experte du marché local et alentour.
 ---
 
-{% include components/headers/contact-page-header.html %}
+Contactez-moi directement soit par téléphone ou WhatsApp au numéro ci-dessous, soit en remplissant le formulaire ci-contre.
 
-{% include contact-form.html %}
+A très bientôt !
+
+Frédérique Lodola
+
+{% include components/headers/header-contact-page.html %}
+
+{% include contact-form-hubspot.html %}

@@ -1,4 +1,4 @@
-site: Argon Jekyll Theme
+site: Frédérique Lodola - Chasseur Immobilier à Avignon
 
 url: https://argon.jekyllthemes.io
 baseurl: 
@@ -11,6 +11,10 @@ collections:
     output: true
     permalink: /blog/:slug
     type: "post"
+  testimonials:
+    output: true
+    permalink: /temoignages-clients/:slug
+    type: "testimonial"
 
 defaults:
   -
@@ -30,6 +34,12 @@ defaults:
       type: "posts"
     values:
       layout: "post" 
+  -
+    scope:
+      path: ""
+      type: "testimonials"
+    values:
+      layout: "post" 
 
 sass:
   sass_dir: assets/styles
@@ -42,4 +52,3 @@ plugins:
 
 paginate: 6
 paginate_path: "/blog/page:num/"
-  

@@ -45,3 +45,13 @@ This template can be edited and changed in _pages/features.md. Just pick the com
 ---
 ```components/features/feature-8.html ```
 {% include components/accordion.html %}
+
+# Testimonials
+
+---
+```components/testimonials/testimonials-1.html ```
+{% include components/testimonials/testimonials-1.html %}
+
+---
+```components/testimonials/testimonials-2.html ```
+{% include components/testimonials/testimonials-2.html %}
