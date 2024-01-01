@@ -2,4 +2,5 @@ _site
 _posts
 blog
 blog/
-features*
+features
+features/
