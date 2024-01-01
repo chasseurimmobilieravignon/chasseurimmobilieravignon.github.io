@@ -39,7 +39,7 @@ defaults:
       path: ""
       type: "testimonials"
     values:
-      layout: "post" 
+      layout: "testimonial" 
 
 sass:
   sass_dir: assets/styles
