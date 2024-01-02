@@ -2,7 +2,7 @@
 title: Johan Dubois - Avignon
 date: 2023-09-16 00:00:00
 description: Description à compléter
-featured_image: /assets/img/pages/photo-15.jpg
+featured_image: /assets/img/avignon-generic/Avignon-Bout-du-Pont-Saint-Benezet.jpg
 testimonial:
     city: Avignon
     text: L'accompagnement par Frédérique a été parfait, du premier jour jusqu'à la signature de l'acte. Une personne à l'écoute de ce que vous recherchez, qui vous apportera des réponses non seulement sur le secteur de l'immobilier mais aussi administratif, fiscal, etc. Je recommande sans hésiter. A bientot peut etre.
