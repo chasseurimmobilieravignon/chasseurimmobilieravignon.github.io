@@ -1,16 +1,18 @@
 ---
-title: Adrien Bono - Avignon
-date: 2023-09-18 00:00:00
-description: This is a demo post that shows what you can do inside portfolio and blog posts. We’ve included everything you need to create engaging posts and case studies to show off your work in a beautiful way.
+title: Johan Dubois - Avignon
+date: 2023-09-16 00:00:00
+description: Description à compléter
 featured_image: /assets/img/pages/photo-15.jpg
-city: Avignon
-platform: Google My Business
-link: https://g.co/kgs/QTNKY4k
+testimonial:
+    city: Avignon
+    text: L'accompagnement par Frédérique a été parfait, du premier jour jusqu'à la signature de l'acte. Une personne à l'écoute de ce que vous recherchez, qui vous apportera des réponses non seulement sur le secteur de l'immobilier mais aussi administratif, fiscal, etc. Je recommande sans hésiter. A bientot peut etre.
+    platform: Google My Business
+    link: https://g.co/kgs/qQtc7uc
 ---
 
-Frédérique m'a aidé à trouver un bien dans Avignon intra-muros. Elle a rapidement identifié et sélectionné les biens à la vente correspondant à mes critères de recherche. Ses conseils et sa connaissance de la ville m'ont permis de faire le bon choix. Disponible et réactive la collaboration s'est bien passée.
+{{ page.testimonial.text }}
 
-<a href="{{ page.link }}" target="blank">Voir ce témoignage sur {{ page.platform }}</a>
+<a href="{{ page.testimonial.link }}" target="blank">Voir ce témoignage sur {{ page.testimonial.platform }}</a>
 
 <div class="blogGlide fullWidth">
     <div class="glide__track" data-glide-el="track">

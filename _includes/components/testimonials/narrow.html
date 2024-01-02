@@ -9,7 +9,7 @@
                     <a href="{{ testimonial.url | relative_url }}">
                         <div class="card-body">
                             <div class="content-bottom">
-                                <h6 class="card-category text-white opacity-8">{{ testimonial.date | date_to_long_string }}
+                                <h6 class="card-category text-white opacity-8">{{ testimonial.date | date: "%d/%m/%Y" }}
                                 </h6>
                                 <h5 class="card-title">{{ testimonial.title }}</h5>
                             </div>
