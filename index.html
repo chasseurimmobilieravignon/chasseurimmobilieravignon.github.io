@@ -5,80 +5,37 @@ description: Chasseur immobilier à Avignon, je vous accompagne dans votre proje
 featured_image: /assets/img/pages/Avignon-Pont-Saint-Benezet.jpeg
 ---
 
-<!--Replace this page with your landing page content -->
-{% if site.data.settings.home_settings.theme == "landing" %}
-  {% include home-sample.html %}
-  <div class="features-7 fullWidth contentWrapper">
-    <div class="container mb-2">
+{% include content-homepage.html %}
+
+
+<!-- List 6 latest testimonials-->
+<div class="features-7 fullWidth contentWrapper">
+  <div class="container mb-2">
     <div class="row">
-        <div class="col-md-8 text-center mx-auto">
-            <h3 class="display-2">Blog</h3>
-            <p class="lead pb-5">The latest posts from our blog</p>
-        </div>
+      <div class="col-md-8 text-center mx-auto">
+          <h3 class="display-2">Témoignages clients</h3>
+          <p class="lead pb-5">Ils m'ont fait confiance !</p>
+      </div>
     </div>
-    
+  
+  </div>
+</div>
+
+<div class="row align-items-center mb-2">
+  {% for testimonial in site.testimonials reversed limit:6 %}
+  <div class="{% if forloop.index == 1 or forloop.index == 6 %}col-lg-6{% else %}col-lg-3{% endif %}">
+    <div class="card card-blog card-background" data-animation="zooming">
+      <div class="full-background" style="background-image: url({{ testimonial.featured_image | relative_url }})"></div>
+      <a href="{{ testimonial.url | relative_url }}">
+        <div class="card-body">
+          <div class="content-bottom">
+            <h6 class="card-category text-white opacity-8">{{ testimonial.date | date: "%d/%m/%Y" }}
+            </h6>
+            <h5 class="card-title">{{ testimonial.title }}</h5>
+          </div>
+        </div>
+      </a>
     </div>
   </div>
-  {% include blogsHome.html %}
-{% endif %}
-
-
-{% if site.data.settings.home_settings.theme == "blog" %}
-  <!-- Or turn your homepage into just a blog -->
-  {% if site.data.settings.blog_settings.theme == "narrow" %}
-  <div class="page-header page-header-small bg-secondary fullWidth ">
-      <div class="container contentWrapper">
-        <div class="row">
-          <div class="col-lg-10 mx-auto text-center pt-4">
-            <h2 class="display-2">Blog</h2>
-            <h2 class="lead pl-5 pr-5 pb-3 text-center">The latest posts from our blog</h2>
-          </div>
-        </div>
-      </div>
-    </div>
-
-      <section class="blog main-raised">
-          {% include blogsHome.html %}  
-      </section>
-          
-  {% endif %}
-
-  {% if site.data.settings.blog_settings.theme == "basic" %}
-  <div class="page-header page-header-small bg-secondary fullWidth ">
-      <div class="container contentWrapper">
-        <div class="row">
-          <div class="col-lg-10 mx-auto text-center pt-4">
-            <h2 class="display-2">Blog</h2>
-            <h2 class="lead pl-5 pr-5 pb-3 text-center">The latest posts from our blog</h2>
-          </div>
-        </div>
-      </div>
-    </div>
-
-      <section class="blog mt-5">
-          {% include blogsHome.html %}  
-      </section>
-          
-  {% endif %}
-
-  {% if site.data.settings.blog_settings.theme == "grid" %}
-  <div class="page-header page-header-small bg-secondary fullWidth ">
-      <div class="container contentWrapper">
-        <div class="row">
-          <div class="col-lg-10 mx-auto text-center pt-4">
-            <h2 class="display-2">Blog</h2>
-            <h2 class="lead pl-5 pr-5 pb-3 text-center">The latest posts from our blog</h2>
-          </div>
-        </div>
-      </div>
-    </div>
-
-      <section class="blog">
-          {% include blogsHome.html %}  
-      </section>
-          
-  {% endif %}
-
-{% endif %}
-
-
+  {% endfor %}
+</div>
