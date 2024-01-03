@@ -1,32 +1,32 @@
 ---
 title: Adrien Bono - Avignon
 date: 2023-09-18 00:00:00
-description: This is a demo post that shows what you can do inside portfolio and blog posts. We’ve included everything you need to create engaging posts and case studies to show off your work in a beautiful way.
-featured_image: /assets/img/avignon-generic/Avignon-Cite-Papes.jpg
-city: Avignon
-platform: Google My Business
-link: https://g.co/kgs/QTNKY4k
+description: Description à compléter
+featured_image: /assets/img/testimonials/adrien-bono/01.jpeg
+testimonial:
+    city: Avignon
+    comment: Frédérique m'a aidé à trouver un bien dans Avignon intra-muros. Elle a rapidement identifié et sélectionné les biens à la vente correspondant à mes critères de recherche. Ses conseils et sa connaissance de la ville m'ont permis de faire le bon choix. Disponible et réactive la collaboration s'est bien passée.
+    answer:
+    platform: Google My Business
+    link: https://g.co/kgs/QTNKY4k
+images:
+    - url: /assets/img/testimonials/adrien-bono/01.jpeg
+    - url: /assets/img/testimonials/adrien-bono/02.jpeg
+    - url: /assets/img/testimonials/adrien-bono/03.jpeg
 ---
 
-Frédérique m'a aidé à trouver un bien dans Avignon intra-muros. Elle a rapidement identifié et sélectionné les biens à la vente correspondant à mes critères de recherche. Ses conseils et sa connaissance de la ville m'ont permis de faire le bon choix. Disponible et réactive la collaboration s'est bien passée.
+{{ page.testimonial.comment }}
 
-<a href="{{ page.link }}" target="blank">Voir ce témoignage sur {{ page.platform }}</a>
+<a href="{{ page.testimonial.link }}" target="blank">Voir ce témoignage sur {{ page.testimonial.platform }}</a>
 
 <div class="blogGlide fullWidth">
     <div class="glide__track" data-glide-el="track">
         <ul class="glide__slides">
-        <li class="glide__slide">
-            <img src="/assets/img/theme/sofia-kuniakina.jpg">
-        </li>
-        <li class="glide__slide">
-            <img src="/assets/img/theme/willy-dade.jpg">
-        </li>
-        <li class="glide__slide">
-            <img src="/assets/img/theme/ali-pazani.jpg">
-        </li>
-        <li class="glide__slide">
-            <img src="/assets/img/theme/sacha-styles.jpg">
-        </li>
+            {% for image in page.images %}
+            <li class="glide__slide">
+                <img src="{{ image.url }}">
+            </li>
+            {% endfor %}
         </ul>
     </div>
     <div class="glide__arrows d-flex justify-content-center mt-2" data-glide-el="controls">
