@@ -2,6 +2,7 @@
 title: Mentions légales
 subtitle: 
 description: Description à compléter
+sitemap: false
 ---
 
 --- 

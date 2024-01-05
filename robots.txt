@@ -4,4 +4,4 @@ layout: none
 User-agent: *
 Sitemap: {{ site.url }}/sitemap.xml
 
-Disallow: {{ site.url }}/mentions-legales
+Disallow: {{ site.url }}/mentions-legales/

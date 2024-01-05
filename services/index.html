@@ -1,5 +1,6 @@
 ---
 redirect_to: /
+sitemap: false
 ---
 
 <!DOCTYPE html>
