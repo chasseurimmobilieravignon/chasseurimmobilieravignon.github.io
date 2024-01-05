@@ -2,21 +2,30 @@
 layout: default
 ---
 
-<section class="section" style="padding-top: 107.219px;">
+<!--<section class="section" style="padding-top: 107.219px;">
   <div class="container">
     <div class="row">
       <div class="col-md-8 ml-auto mr-auto">
-        <h3 class="title">{{ page.title }}</h3>
-        <h6 class="category">{{ page.date | date: "%d/%m/%Y" }}</h6>
+        <h1 class="title">{{ page.title }}</h1>
+        <h3 class="category">{{ page.date | date: "%d/%m/%Y" }}</h3>
         <article class="blog-post">
           {{ page.content }}
         </article>
       </div>
     </div>
   </div>
-</section>
+</section>-->
 
+<div class="container contentWrapper pb-2">
+  <div class="text-left mt-5 mb-3">
+    <h1 class="display-2">{{page.title}}</h1>
+    <h3 class="category">{{ page.date | date: "%d/%m/%Y" }}</h3>
+  </div>
+</div>
 
+<div id="main" class="container">
+  {{content}}
+</div>
 
 {% if site.data.settings.blog_settings.read_more == "yes" %}
 <section class="blogs-1">
