@@ -8,13 +8,7 @@
   <!-- Page Info -->
   <link rel="shortcut icon" href="{{ site.data.settings.basic_settings.favicon_image | relative_url }}">
   <title>
-    {% if page.url == "/" %}
-      {{ page.title }}
-    {% elsif page.collection == "testimonials" %}
-      Témoignage client projet d'{{ page.testimonial.project_type}} immo à {{ page.testimonial.city }}
-    {% else %}
-      {{ page.title }} – {{ site.data.settings.basic_settings.site_title }}
-    {% endif %}</title>
+    {% if page.url == "/" %}{{ page.title }}{% elsif page.collection == "testimonials" %}Témoignage client projet d'{{ page.testimonial.project_type}} immo à {{ page.testimonial.city }}{% else %}{{ page.title }} – {{ site.data.settings.basic_settings.site_title }}{% endif %}</title>
   <meta name="description" content="{{ page.description }}">
 
   <!-- Twitter Card -->
@@ -41,6 +35,9 @@
   <link href="{{ "/assets/css/nucleo-svg.css" | relative_url }}" rel="stylesheet" />
   <!-- CSS Files -->
   <link rel="stylesheet" href="{{ "/assets/styles/styles.css" | relative_url }}" rel="stylesheet">
+
+  {% if page.index == false %}<meta name="robots" content="noindex">{% endif %}
+  <link rel="canonical" href="{{ site.url }}{{ page.url }}" />
 
   {% if site.data.settings.advanced_settings.analytics_code %}
   <!-- Analytics Code -->
