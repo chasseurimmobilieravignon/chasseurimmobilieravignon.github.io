@@ -1,6 +1,6 @@
 basic_settings:
   site_title: Frédérique Lodola - Chasseur Immobilier à Avignon
-  favicon_image: /assets/img/favicon.png
+  favicon_image: /assets/img/favicon.ico
 
 header_settings:
   logo_image: /assets/img/brand/frederique-lodola-chasseur-immobilier.png
