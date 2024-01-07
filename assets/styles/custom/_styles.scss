@@ -1,1 +1,14 @@
+/* All custom styles. */
 
+/* Text styling for mobile header on homepage. */
+@media (max-width: 576px) {
+    #main > header > div > div.container > div > div > h1,
+    #main > header > div > div.container > div > div > p {
+        color: $default!important;
+        text-shadow: none;
+    }
+
+    #main > header > div > div.container > div > div > div {
+        text-align: center;
+    }
+}
