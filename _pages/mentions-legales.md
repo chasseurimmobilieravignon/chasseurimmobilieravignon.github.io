@@ -19,9 +19,4 @@ SIRET: 84361511300019
 
 ## Crédits photo
 Photo de la page d’accueil : Chiugoran, CC BY-SA 3.0 https://creativecommons.org/licenses/by-sa/3.0, via Wikimedia Commons
-
-
-
-
-
 ---
