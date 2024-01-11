@@ -7,3 +7,4 @@ Sitemap: {{ site.url }}/sitemap.xml
 Disallow: {{ site.url }}/mentions-legales/
 Disallow: {{ site.url }}/feed/
 Disallow: {{ site.url }}/search/*/feed/rss2/
+Disallow: {{ site.url }}/?s=*
