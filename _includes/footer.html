@@ -24,14 +24,14 @@
 
           {% else %}
           <li class="nav-item">
-            <a href="{{ item.url | relative_url }}" class="nav-link">
+            <a href="{{ item.url | relative_url }}/" class="nav-link">
               <span class="nav-link-inner--text">{{ item.title }}</span>
             </a>
           </li>
           {% endif %}
           {% endfor %}
           <li class="nav-item">
-            <a href="/mentions-legales" class="nav-link">
+            <a href="/mentions-legales/" class="nav-link" rel="nofollow">
               <span class="nav-link-inner--text">Mentions légales</span>
             </a>
           </li>
