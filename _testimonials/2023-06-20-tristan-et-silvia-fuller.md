@@ -1,12 +1,12 @@
 ---
-title: Tristan et Silvia Fuller - Avignon
+title: Tristan et Silvia Fuller - Malemort-du-Comtat
 date: 2023-06-20 00:00:00
 description: Description à compléter.
 featured_image: /assets/img/testimonials/tristan-et-silvia-fuller/01.jpeg
 testimonial:
     buyer: Tristan et Silvia Fuller
     project_type: achat
-    city: Avignon
+    city: Malemort-du-Comtat
     comment: Frédérique nous a guidé et accompagné dans notre projet avec son expertise, sa gentillesse et son efficacité. Pendant tout le processus, sa voix rassurante, sa perspicacité et ses conseils nous ont énormément soutenus. D’ailleurs, Frédérique a toujours été disponible en cas d’urgence, notamment pendant le weekend, et elle était capable de répondre à toute question que nous avons eue. C’était surtout apprécié avec notre achat à distance et sa volonté de nous aider ’sur place’ était vraiment indispensable. Un grand merci pour tout Fréderique !
     answer:
     platform: Immodvisor

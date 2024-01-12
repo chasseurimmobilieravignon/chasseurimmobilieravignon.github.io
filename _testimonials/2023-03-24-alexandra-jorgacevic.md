@@ -1,12 +1,12 @@
 ---
-title: Alexandra Jorgacevic - Avignon
+title: Alexandra Jorgacevic - Robion
 date: 2023-03-24 00:00:00
 description: Description à compléter.
 featured_image: /assets/img/testimonials/alexandra-jorgacevic/01.jpeg
 testimonial:
     buyer: Alexandra Jorgacevic
     project_type: achat
-    city: Avignon
+    city: Robion
     comment: Je suis totalement satisfaite du travail de Frederique Lodola. Je ne pouvais espérer meilleur accompagnement dans ma recherche. Frederique est extrêmement précise, investie, disponible et a parfaitement compris mon projet. De plus, j'ai énormément apprécié l'aspect humain lors de mes différents échanges  Frédérique. Une expérience positive à 100%.
     answer:
     platform: Google My Business

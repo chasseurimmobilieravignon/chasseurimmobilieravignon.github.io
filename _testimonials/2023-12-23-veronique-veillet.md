@@ -1,12 +1,12 @@
 ---
-title: Véronique Veillet - Avignon
+title: Véronique Veillet - Uzès
 date: 2023-12-23 00:00:00
 description: Description à compléter.
 featured_image: /assets/img/testimonials/veronique-veillet/01.jpeg
 testimonial:
     buyer: Véronique Veillet
     project_type: achat
-    city: Avignon
+    city: Uzès
     comment: Très satisfaits de la prestation de Mme LODOLA. Une vraie pro,  très à l'écoute, qui a bien cerné notre demande et qui a su y répondre dans 1 délai très court. Un grand merci à elle !
     answer:
     platform: Google My Business
