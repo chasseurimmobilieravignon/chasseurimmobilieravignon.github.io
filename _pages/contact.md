@@ -5,15 +5,24 @@ description: Chasseur Immobilier, implanatée à Avignon depuis 2017; experte du
 ---
 
 ---
-Contactez-moi directement soit par téléphone ou WhatsApp au numéro ci-dessous, soit en remplissant le formulaire ci-contre.
 
-A très bientôt !
+<section id="" class="">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-4 col-10 mx-md-auto">
+        <img class="ml-lg-5 img-fluid rounded-circle shadow" src="{{ '/assets/img/frederique-lodola/Frederique-Lodola-chasseur-immo-a-Avignon.jpeg' | relative_url }}" width="50%">
+      </div>
+      <div class="col-lg-8">
+        <p>Contactez-moi directement soit par téléphone ou WhatsApp au numéro ci-dessous, soit en remplissant le formulaire ci-après.</p>
+        <p>A très bientôt !</p>
+        <p>Frédérique Lodola</p>
+      </div>
+    </div>
+  </div>
+</section>
 
-Frédérique Lodola
-
----
-
-<div class="contactus-3 fullWidth">
+<section>
+<div class="contactus-3">
   <div class="container">
     <div class="row">
       <div class="col-lg-6 col-md-6 col-6">
@@ -22,7 +31,7 @@ Frédérique Lodola
             <i class="ni ni-mobile-button"></i>
           </div>
           <h4 class="info-title">Téléphone / WhatsApp</h4>
-          <p class="description px-0">+33 7 69 91 57 35</p>
+          <p class="description px-0"><a href="tel:+33769915735">+33 769 915 735</a></p>
         </div>
       </div>
       <div class="col-lg-6 col-md-6 col-6">
@@ -37,5 +46,6 @@ Frédérique Lodola
     </div>
   </div>
 </div>
+</section>
 
 {% include contact-form-hubspot.html %}

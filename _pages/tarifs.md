@@ -1,8 +1,14 @@
 ---
-title: Tarifs
-subtitle: Des honoraires forfaitaires et transparents, uniquement dûs à la signature de l’acte authentique.
+title: Tarifs chasseur immobilier à Avignon
+subtitle: Des honoraires forfaitaires et transparents, uniquement dûs à la signature de l’acte authentique,à partir de 2,5% FAI.
 description: Description à compléter
 ---
+
+<div class="buttons">
+    <a href="/contact/" class="btn btn-primary">
+        Décrivez votre projet immobilier
+    </a>
+</div>
 
 --- 
 ## Une tarification simple et transparente
@@ -13,7 +19,9 @@ Le métier de Chasseur Immobilier est un métier de l’immobilier réglementé 
 
 Les tarifs pratiqués sont forfaitaires et donnés en totale transparence :
 
----
+&nbsp;  
+
+## Combien coûte un chasseur immobilier à Avignon ?
 
 {% include components/pricing/tarifs-2024.html %}
 
