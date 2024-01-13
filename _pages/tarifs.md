@@ -1,7 +1,7 @@
 ---
 title: Tarifs chasseur immobilier à Avignon
 subtitle: Des honoraires forfaitaires et transparents, uniquement dûs à la signature de l’acte authentique,à partir de 2,5% FAI.
-description: Description à compléter
+description: Découvrez en détail les tarifs pour votre projet immobilier ! Je suis à votre disposition pour vous guider vers une acquisition réussie, en toute simplicité.
 ---
 
 <div class="buttons">

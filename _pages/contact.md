@@ -47,5 +47,3 @@ description: Chasseur Immobilier, implanatée à Avignon depuis 2017; experte du
   </div>
 </div>
 </section>
-
-{% include contact-form-hubspot.html %}
