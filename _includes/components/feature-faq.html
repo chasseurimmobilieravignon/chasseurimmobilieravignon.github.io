@@ -1,0 +1,55 @@
+<div class="cd-section" id="accordion">
+    <div class="accordion-1">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 mx-auto text-center">
+            <h2 class="title mb-3 mt-5">Questions fréquentes</h2>
+          </div>
+        </div>
+        <!-- Begin accordion -->
+        <div class="row">
+          <div class="col-md-12 ml-auto">
+            <div class="accordion" id="accordionExample">
+              {% assign counter = 1 %}
+              {% for faq in site.data.featured_faqs %}
+                {% case counter %}
+                  {% when 1 %}
+                    {% assign numeral = 'One' %}
+                  {% when 2 %}
+                    {% assign numeral = 'Two' %}
+                  {% when 3 %}
+                    {% assign numeral = 'Three' %}
+                  {% when 4 %}
+                    {% assign numeral = 'Four' %}
+                  {% when 5 %}
+                    {% assign numeral = 'Five' %}
+                {% endcase %}
+                <div class="card">
+                  <div class="card-header" id="heading{{ numeral  }}">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link w-100 text-primary text-left collapsed" type="button" data-toggle="collapse" data-target="#collapse{{ numeral }}" aria-expanded="true" aria-controls="collapse{{ numeral }}">
+                        {{ faq.question }}
+                        <i class="ni ni-bold-down float-right pt-1"></i>
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapse{{ numeral }}" class="collapse {% if counter == 1 %}show{% endif %}" aria-labelledby="heading{{ numeral }}" data-parent="#accordionExample" style="">
+                    <div class="card-body opacity-8">
+                      {{ faq.answer | markdownify }}
+                    </div>
+                  </div>
+                </div>
+                {% assign counter = counter | plus:1 %}
+              {% endfor %}
+            </div>
+          </div>
+        </div>
+        <!-- End accordion -->
+        <div class="row">
+          <div class="col-md-8 mx-auto text-center">
+            <h3 class="title mb-3 mt-5"><a href="/faq/">Explorez toutes les questions que posent mes clients et clientes</a>, et découvrez tout sur l'achat immobilier à Avignon et alentours accompagné d'un chasseur immobilier !</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

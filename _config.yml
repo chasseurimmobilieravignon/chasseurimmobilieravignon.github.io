@@ -15,6 +15,10 @@ collections:
     output: true
     permalink: /temoignages-clients/:slug/
     type: "testimonial"
+  faqs:
+    output: true
+    permalink: /faq/:slug/
+    type: "faq"
 
 defaults:
   -
@@ -40,6 +44,12 @@ defaults:
       type: "testimonials"
     values:
       layout: "testimonial" 
+  -
+    scope:
+      path: ""
+      type: "faqs"
+    values:
+      layout: "faq" 
 
 sass:
   sass_dir: assets/styles

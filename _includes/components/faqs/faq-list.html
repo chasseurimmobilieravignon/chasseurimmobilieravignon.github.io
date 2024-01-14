@@ -1,0 +1,13 @@
+<section class="blogs-1">
+    <div class="container">
+        {% assign faq_count = site.faqs | size %}
+        <!-- FAQ count : {{ faq_count }} -->
+        <div class="">
+            {% assign faqs = site.faqs | sort:"position" %}
+            {% for faq in faqs %}
+                <h3><a href="{{ faq.url | relative_url }}">{{ faq.title }}</a></h3>
+                <p>{{ faq.answer | truncate: 150 }} <a href="{{ faq.url | relative_url }}">lire la suite</a></p>
+            {% endfor %}
+        </div>
+    </div>
+</section>
