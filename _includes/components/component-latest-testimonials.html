@@ -12,7 +12,7 @@
   </div>
   
   <div class="row align-items-center mb-2">
-    {% for testimonial in site.testimonials reversed limit:9 %}
+    {% for testimonial in site.testimonials reversed limit:10 %}
     <div class="{% if forloop.index == 1 or forloop.index == 6 %}col-lg-6{% else %}col-lg-3{% endif %}">
       <div class="card card-blog card-background" data-animation="zooming">
         <div class="full-background" style="background-image: url({{ testimonial.featured_image | relative_url }})"></div>
@@ -28,5 +28,11 @@
       </div>
     </div>
     {% endfor %}
+  </div>
+
+  <div class="row">
+    <div class="col-md-8 mx-auto text-center">
+      <h3 class="title mb-3 mt-5"><a href="/temoignages-clients/">Découvrez tous mes témoignages clients</a>, et entrez dans l'univers d'un chasseur immobilier à Avignon et alentours&nbsp;!</h3>
+    </div>
   </div>
   <!-- End list 9 latest testimonials -->
