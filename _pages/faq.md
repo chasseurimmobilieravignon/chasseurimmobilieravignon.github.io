@@ -7,5 +7,4 @@ subtitle:
 Voici une série de questions fréquemment posées par mes clients et les personnes intéressées par les services du chasseur immobilier, portant sur son rôle et ses missions.
 
 ---
-
 {% include components/faqs/faq-list.html %}

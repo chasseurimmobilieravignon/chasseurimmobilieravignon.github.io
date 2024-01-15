@@ -1,0 +1,62 @@
+<!-- Level 1 > Homepage -->
+{% if page.url == "/" %}
+    {% assign level_one = true %}
+{% else %}
+    {% assign level_one = false %}
+    <!-- Level 2 -->
+    {% assign level_two = true %}
+    {% case page.collection %}
+        {% when "faqs" %}
+            {% assign level_two_link = "faq/" %}
+            {% assign level_two_text = "FAQ" %}
+        {% when "posts" %}
+            {% assign level_two_link = "blog/" %}
+            {% assign level_two_text = "Blog" %}
+        {% when "testimonials" %}
+            {% assign level_two_link = "temoignages-clients/" %}
+            {% assign level_two_text = "Témoignages clients" %}
+    {% endcase %}
+    <!-- Level 3 --->
+    {% if page.collection == "faqs" or page.collection == "testimonials" %}
+        {% assign level_two = false %}
+        {% assign level_three = true %}
+    {% endif %}
+{% endif %}
+
+<div id="breadcrumbs" class="breadcrumbs">
+    <ol class="list-inline" itemscope itemtype="https://schema.org/BreadcrumbList">
+        {% if level_two %}
+        <li class="list-inline-item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+            <a itemprop="item" href="{{ site.baseurl | relative_url }}/"><span itemprop="name">Accueil</span></a>
+            <meta itemprop="position" content="1" />
+          </li>
+          ›
+          <li class="list-inline-item" itemprop="itemListElement" itemscope
+              itemtype="https://schema.org/ListItem">
+            <span itemprop="name">{{ page.title }}</span>
+            <meta itemprop="position" content="2" />
+          </li>
+        {% endif %}
+
+        {% if level_three %}
+        <li class="list-inline-item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+            <a itemprop="item" href="{{ site.baseurl | relative_url }}/"><span itemprop="name">Accueil</span></a>
+            <meta itemprop="position" content="1" />
+          </li>
+          ›
+          <li class="list-inline-item"  itemprop="itemListElement" itemscope
+              itemtype="https://schema.org/ListItem">
+            <a itemscope itemtype="https://schema.org/WebPage" itemprop="item" itemid="https://example.com/books/sciencefiction"
+               href="{{ site.baseurl | relative_url }}/{{ level_two_link }}">
+              <span itemprop="name">{{ level_two_text }}</span></a>
+            <meta itemprop="position" content="2" />
+          </li>
+          ›
+          <li class="list-inline-item"  itemprop="itemListElement" itemscope
+              itemtype="https://schema.org/ListItem">
+            <span itemprop="name">{{ page.title }}</span>
+            <meta itemprop="position" content="3" />
+          </li>
+        {% endif %}  
+    </ol>
+</div>
