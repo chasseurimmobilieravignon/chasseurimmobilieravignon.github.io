@@ -13,8 +13,4 @@ testimonial:
     link: https://g.co/kgs/ywtamCF
 images:
     - url: /assets/img/testimonials/theo-holtz/01.jpeg
-    - url: /assets/img/testimonials/theo-holtz/02.jpeg
-    - url: /assets/img/testimonials/theo-holtz/03.jpeg
-    - url: /assets/img/testimonials/theo-holtz/04.jpeg
-    - url: /assets/img/testimonials/theo-holtz/05.jpeg
 ---

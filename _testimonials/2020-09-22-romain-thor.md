@@ -17,4 +17,5 @@ images:
     - url: /assets/img/testimonials/romain-thor/03.jpeg
     - url: /assets/img/testimonials/romain-thor/04.jpeg
     - url: /assets/img/testimonials/romain-thor/05.jpeg
+    - url: /assets/img/testimonials/romain-thor/06.jpeg
 ---
