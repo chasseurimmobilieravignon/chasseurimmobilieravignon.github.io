@@ -12,7 +12,7 @@ layout: default
 
 <div id="main" class="container">
   <!-- Comment -->
-  <p>{{ page.testimonial.comment }}</p>
+  <p>{{ page.testimonial.comment | markdownify  }}</p>
 
   <!-- Testimonial link -->
   {% if page.testimonial.platform == "Google My Business" or page.testimonial.platform == "Immodvisor" %}
