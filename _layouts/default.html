@@ -17,6 +17,15 @@
   <meta name="description" content="{{ page.description }}">
   {% endif %}
 
+  <script type="application/ld+json">
+    {
+      "@context" : "https://schema.org",
+      "@type" : "WebSite",
+      "name" : "{{ site.data.settings.basic_settings.site_title }}",
+      "url" : "{{ site.url }}"
+    }
+  </script>
+
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title"
