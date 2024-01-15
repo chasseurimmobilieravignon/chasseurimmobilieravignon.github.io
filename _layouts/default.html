@@ -8,8 +8,14 @@
   <!-- Page Info -->
   <link rel="shortcut icon" href="{{ site.data.settings.basic_settings.favicon_image | relative_url }}">
   <title>
-    {% if page.url == "/" %}{{ page.title }}{% elsif page.collection == "testimonials" %}Témoignage client projet d'{{ page.testimonial.project_type}} immo à {{ page.testimonial.city }}{% else %}{{ page.title }} – {{ site.data.settings.basic_settings.site_title }}{% endif %}</title>
+    {% if page.url == "/" %}{{ page.title }}{% elsif page.collection == "testimonials" %}Témoignage client projet d'{{ page.testimonial.project_type}} immo à {{ page.testimonial.city }}{% else %}{{ page.title }} – {{ site.data.settings.basic_settings.site_title }}{% endif %}
+  </title>
+
+  {% if page.collection == "faqs" %}
+  <meta name="description" content="{{ page.title }} Je vous dis tout sur le métier de chasseur immobilier à Avignon !">
+  {% else %}
   <meta name="description" content="{{ page.description }}">
+  {% endif %}
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">

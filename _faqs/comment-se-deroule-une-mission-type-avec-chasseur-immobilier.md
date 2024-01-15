@@ -1,6 +1,5 @@
 ---
 title: Comment se déroule une mission type avec un chasseur immobilier ?
-description: Description à compléter.
 position: 003
 category: 
 question: Comment se déroule une mission type avec un chasseur immobilier ?

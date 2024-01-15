@@ -1,6 +1,5 @@
 ---
 title: Pourquoi faire appel à un chasseur immobilier&nbsp;?
-description: Description à compléter.
 category: 
 position: 001
 question: Pourquoi faire appel à un chasseur immobilier&nbsp;?

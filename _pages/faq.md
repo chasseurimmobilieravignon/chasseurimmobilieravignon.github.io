@@ -1,6 +1,7 @@
 ---
 title: FAQ
 subtitle: 
+description: Retrouvez ici toutes les questions que vous vous posez concernant les services de chasseur immobilier à Avignon et alentours.
 ---
 ## Toutes les questions que vous vous posez sur le chasseur immobilier !
 

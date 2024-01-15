@@ -1,6 +1,5 @@
 ---
 title: Combien coûtent les services d'un chasseur immobilier à Avignon et ses alentours ?
-description: Description à compléter.
 position: 002
 category: 
 question: Combien coûtent les services d'un chasseur immobilier à Avignon et ses alentours ?

@@ -1,6 +1,5 @@
 ---
 title: 
-description: Description à compléter.
 position: 
 category: 
 question: 

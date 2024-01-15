@@ -1,6 +1,5 @@
 ---
 title: Qu'est-ce différencie un chasseur immobilier d'une agence immobilière ?
-description: Description à compléter.
 position: 005
 category: 
 question: Qu'est-ce différencie un chasseur immobilier d'une agence immobilière ?

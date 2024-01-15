@@ -1,6 +1,5 @@
 ---
 title: Comment un chasseur immobilier peut-il simplifier la recherche d'une maison ou d'un appartement à Avignon ?
-description: Description à compléter.
 position: 004
 category: 
 question: Comment un chasseur immobilier peut-il simplifier la recherche d'une maison ou d'un appartement à Avignon ?
