@@ -4,7 +4,9 @@ date: 2022-07-04
 description: Description à compléter.
 featured_image: /assets/img/testimonials/sabine-semes/01.jpeg
 testimonial:
-    buyer: Sabine Semes
+    buyer:
+        fullname: Sabine Semes
+        firstname: Sabine
     project_type: achat
     city: Viens
     comment: Par son écoute, sa patience, sa disponibilité et surtout pour toutes ses connaissances sur le sujet de l'immobilier, Frédérique nous a été d'une aide précieuse. Indispensable. Sans elle, notre projet n'aurait probablement pas vu le jour.

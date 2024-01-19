@@ -4,7 +4,9 @@ date: 2022-07-01
 description: Description à compléter.
 featured_image: /assets/img/testimonials/vincent-semes/01.jpeg
 testimonial:
-    buyer: Vincent Semes
+    buyer:
+        fullanme: Vincent Semes
+        firstname: Vincent
     project_type: achat
     city: Viens
     comment: Un service et un suivi impeccable. Le mot perfection est de circonstance!

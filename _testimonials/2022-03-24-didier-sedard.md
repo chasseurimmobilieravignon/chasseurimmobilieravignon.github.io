@@ -4,7 +4,9 @@ date: 2022-03-24
 description: Description à compléter.
 featured_image: /assets/img/testimonials/didier-sedard/01.jpeg
 testimonial:
-    buyer: Didier Sedard
+    buyer:
+        fullname: Didier Sedard
+        firstname: Didier
     project_type: achat
     city: Violès
     comment: Nous avons eu un  bon contact avec Frédérique dès le départ. C'est une personne très à l'écoute et qui a de suite cerné nos souhaits. Frédérique a une bonne connaissance de sa région et est très professionnelle. Elle a aussi beaucoup de patience car nous avons été des clients difficile à satisfaire. Mais le résultat est là, elle nous a trouvé la maison de nos rêves. Encore merci Frédérique pour votre dévouement et votre accompagnement.

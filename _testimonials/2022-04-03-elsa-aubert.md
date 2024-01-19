@@ -4,7 +4,9 @@ date: 2022-04-03
 description: Description à compléter.
 featured_image: /assets/img/testimonials/elsa-aubert/01.jpeg
 testimonial:
-    buyer: Elsa Aubert
+    buyer:
+        fullname: Elsa Aubert
+        firstname: Elsa
     project_type: achat
     city: Morières-les-Avignon
     comment: Nous avons mandaté Frédérique pour la recherche de notre maison pour résidence principale en région avignonnaise et nous sommes très satisfaits de ses services. Professionnelle tout en restant très humaine, ses conseils avisés, sa disponibilité et son expérience nous ont parfaitement accompagnés dans notre projet. Nous la recommandons sans aucune hésitation !

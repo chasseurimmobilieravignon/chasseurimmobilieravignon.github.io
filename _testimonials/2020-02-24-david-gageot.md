@@ -4,7 +4,9 @@ date: 2020-02-24
 description: Description à compléter.
 featured_image: /assets/img/testimonials/david-gageot/01.jpeg
 testimonial:
-    buyer: David Gageot
+    buyer:
+        fullname: David Gageot
+        firstname: David
     project_type: achat
     city: Rochefort du Gard
     comment: |-

@@ -4,7 +4,9 @@ date: 2020-01-29
 description: Description à compléter.
 featured_image: /assets/img/testimonials/romain-belliard/01.jpeg
 testimonial:
-    buyer: Romain Belliard
+    buyer:
+        fullanme: Romain Belliard
+        firstname: Romain
     project_type: investissement
     city: Avignon
     comment: |-

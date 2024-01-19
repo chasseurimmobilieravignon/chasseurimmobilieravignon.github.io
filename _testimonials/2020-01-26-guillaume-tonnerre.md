@@ -4,7 +4,9 @@ date: 2020-01-26
 description: Description à compléter.
 featured_image: /assets/img/testimonials/guillaume-tonnerre/01.jpeg
 testimonial:
-    buyer: Guillaume Tonnerre
+    buyer:
+        fullname: Guillaume Tonnerre
+        firstname: Guillaume
     project_type: investissement
     city: Avignon
     comment: Très professionnelle et à l'écoute. Un support assuré avant le projet, pendant et même après ! Je recommande.
