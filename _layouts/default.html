@@ -11,11 +11,18 @@
     {% if page.url == "/" %}{{ page.title }}{% elsif page.collection == "testimonials" %}Témoignage client projet d'{{ page.testimonial.project_type}} immo à {{ page.testimonial.city }}{% else %}{{ page.title }} – {{ site.data.settings.basic_settings.site_title }}{% endif %}
   </title>
 
-  {% if page.collection == "faqs" %}
+  {% assign context = page.collection %}
+  {% case context %}
+  {% when 'faqs' %}
+  <!-- FAQs -->
   <meta name="description" content="{{ page.title }} Je vous dis tout sur le métier de chasseur immobilier à Avignon !">
+  {% when 'testimonials' %}
+  <!-- Testimonials -->
+  <meta name="description" content="Découvrez le témoignage très positif de {{ page.testimonial.buyer.firstname }} suite à son projet d'achat immobilier à {{ page.testimonial.city }} réalisé avec Frédérique Lodola, chasseur immobilier à Avignon et alentours.">
   {% else %}
+  <!-- Neither -->
   <meta name="description" content="{{ page.description }}">
-  {% endif %}
+  {% endcase %}
 
   <script type="application/ld+json">
     {

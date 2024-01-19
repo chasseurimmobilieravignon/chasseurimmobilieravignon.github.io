@@ -4,7 +4,9 @@ date: 2023-12-23
 description: Description à compléter.
 featured_image: /assets/img/testimonials/veronique-veillet/01.jpeg
 testimonial:
-    buyer: Véronique Veillet
+    buyer:
+        fullname: Véronique Veillet
+        firstname: Véronique
     project_type: achat
     city: Uzès
     comment: Très satisfaits de la prestation de Mme LODOLA. Une vraie pro,  très à l'écoute, qui a bien cerné notre demande et qui a su y répondre dans 1 délai très court. Un grand merci à elle !

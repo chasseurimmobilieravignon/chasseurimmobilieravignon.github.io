@@ -5,7 +5,11 @@ layout: default
 <div class="container contentWrapper pb-2">
   <div>{% include /components/breadcrumbs.html %}</div>
   <div class="text-left mt-5 mb-3">
-    <h1 class="display-2">{{page.title}}</h1>
+    {% if page.testimonial.buyer.firstname %}
+    <h1 class="display-2">Témoignage de {{ page.testimonial.buyer.firstname }}, projet à {{ page.testimonial.city }}</h1>
+    {% else %}
+    <h1 class="display-2">{{ page.title }}</h1>
+    {% endif %}
     <h3 class="category">{{ page.date | date: "%d/%m/%Y" }}</h3>
   </div>
 </div>
