@@ -2,9 +2,9 @@
 layout: none
 ---
 User-agent: *
-Sitemap: {{ site.url }}/sitemap.xml
+Sitemap: /sitemap.xml
 
-Disallow: {{ site.url }}/mentions-legales/
-Disallow: {{ site.url }}/feed/
-Disallow: {{ site.url }}/search/*/feed/rss2/
-Disallow: {{ site.url }}/?s=*
+Disallow: /mentions-legales/
+Disallow: /feed/
+Disallow: /search/*/feed/rss2/
+Disallow: /?s=*
